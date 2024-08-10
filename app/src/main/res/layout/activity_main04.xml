@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF5722"
+    tools:context=".MainActivity04">
+
+    <!-- Imagen de fondo que ocupa todo el espacio del ConstraintLayout -->
+    <ImageView
+        android:id="@+id/imgFondo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.504"
+        app:srcCompat="@drawable/upload_816230812391"
+        android:contentDescription="@string/fondo" />
+
+    <!-- Logo de la aplicación, posicionado en la parte superior central -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@id/RegisUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/logo02" />
+
+    <!-- Título del formulario "Registro Usuarios" -->
+    <TextView
+        android:id="@+id/RegisUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro Usuarios"
+        android:textColor="#E5FE00"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/Nombres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <!-- Campo para ingresar el nombre del usuario -->
+    <EditText
+        android:id="@+id/Nombres"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#DBF4F7"
+        android:hint="Nombres"
+        android:textColor="#5E5D5D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/Apellidos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RegisUsuario" />
+
+    <!-- Campo para ingresar el apellido del usuario -->
+    <EditText
+        android:id="@+id/Apellidos"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#DBF4F7"
+        android:hint="Apellidos"
+        android:textColor="#5E5D5D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/TipoDocumento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Nombres" />
+
+    <!-- Campo para ingresar el tipo de documento del usuario -->
+    <EditText
+        android:id="@+id/TipoDocumento"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#DBF4F7"
+        android:hint="Tipo Documento"
+        android:textColor="#5E5D5D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/NumDocumento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Apellidos" />
+
+    <!-- Campo para ingresar el número de documento del usuario -->
+    <EditText
+        android:id="@+id/NumDocumento"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#DBF4F7"
+        android:hint="Numero Documento"
+        android:inputType="number"
+        android:textColor="#5E5D5D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/Direccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TipoDocumento" />
+
+    <!-- Campo para ingresar la dirección del usuario -->
+    <EditText
+        android:id="@+id/Direccion"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#DBF4F7"
+        android:hint="Direccion"
+        android:textColor="#5E5D5D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/Telefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/NumDocumento" />
+
+    <!-- Campo para ingresar el número de teléfono del usuario -->
+    <EditText
+        android:id="@+id/Telefono"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#DBF4F7"
+        android:hint="Telefono"
+        android:inputType="phone"
+        android:textColor="#5E5D5D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Direccion" />
+
+    <!-- Campo para ingresar el correo electrónico del usuario -->
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#DBF4F7"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#5E5D5D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/Contraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Telefono" />
+
+    <!-- Campo para ingresar la contraseña del usuario -->
+    <EditText
+        android:id="@+id/Contraseña"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#DBF4F7"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColor="#5E5D5D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/ConfContraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Email" />
+
+    <!-- Campo para confirmar la contraseña del usuario -->
+    <EditText
+        android:id="@+id/ConfContraseña"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#DBF4F7"
+        android:hint="Confirme Contraseña"
+        android:inputType="textPassword"
+        android:textColor="#5E5D5D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/Enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Contraseña" />
+
+    <!-- Botón de envío para registrar al usuario -->
+    <Button
+        android:id="@+id/Enviar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#003FFF"
+        android:text="Enviar"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ConfContraseña" />
+
+    <TextView
+        android:id="@+id/Version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sedo_AA V 1.00"
+        android:textColor="#1CFE00"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Enviar"
+        app:layout_constraintVertical_bias="0.98" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

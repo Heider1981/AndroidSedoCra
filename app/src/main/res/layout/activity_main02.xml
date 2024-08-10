@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fondo de la actividad -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF5722"
+    tools:context=".MainActivity02">
+
+<ImageView
+android:id="@+id/imgFondo"
+android:layout_width="0dp"
+android:layout_height="0dp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:srcCompat="@drawable/upload_816230812391" /> <!-- Imagen de fondo -->
+
+<ImageView
+android:id="@+id/imgLogo"
+android:layout_width="250dp"
+android:layout_height="200dp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.226"
+app:srcCompat="@drawable/logo02" /> <!-- Logo centrado en la parte superior -->
+
+<TextView
+android:id="@+id/textView3"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="id Usuario"
+android:textColor="#E4FD00"
+android:textSize="20sp"
+android:textStyle="bold"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.303"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.601" /> <!-- Etiqueta para el campo de usuario -->
+
+<TextView
+android:id="@+id/textView4"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Contraseña"
+android:textColor="#E4FD00"
+android:textSize="20sp"
+android:textStyle="bold"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.321"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.706" /> <!-- Etiqueta para el campo de contraseña -->
+
+<TextView
+android:id="@+id/Inicio"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Ingreso Clientes"
+android:textColor="#E5FE00"
+android:textSize="40sp"
+android:textStyle="bold"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.501"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.117" /> <!-- Título principal de la pantalla -->
+
+<TextView
+android:id="@+id/Version"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Sedo_AA V 1.00"
+android:textColor="#1CFE00"
+android:textSize="16sp"
+android:textStyle="bold"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.501"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.98" /> <!-- Información de versión en la parte inferior -->
+
+<EditText
+android:id="@+id/Password"
+android:layout_width="240dp"
+android:layout_height="34dp"
+android:background="#DCF5F8"
+android:ems="10"
+android:inputType="numberPassword"
+android:textColor="#020202"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.497"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.747" /> <!-- Campo de entrada para contraseña -->
+
+<EditText
+android:id="@+id/Usuario"
+android:layout_width="240dp"
+android:layout_height="34dp"
+android:background="#DBF4F7"
+android:ems="10"
+android:gravity="start|top"
+android:inputType="textMultiLine"
+android:textColor="#040404"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.497"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.641" /> <!-- Campo de entrada para usuario -->
+
+<TextView
+android:id="@+id/textView2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="¿Has olvidado tu contraseña?"
+android:textColor="#0048FF"
+android:textSize="16sp"
+android:textStyle="bold"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.786" /> <!-- Enlace para recuperar la contraseña -->
+
+<Button
+android:id="@+id/button"
+android:layout_width="112dp"
+android:layout_height="50dp"
+android:backgroundTint="#0027FF"
+android:text="Enviar"
+android:textColor="#050505"
+android:textSize="16sp"
+android:textStyle="bold"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.498"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.868" /> <!-- Botón para enviar las credenciales -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
